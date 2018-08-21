@@ -1,18 +1,275 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>GameSale版-Moptt標題修正教學By MAGICXX</title>
+    <style>
+    /* Always set the map height explicitly to define the size of the div
+	       * element that contains the map. */
+
+    #map {
+        height: 100%;
+    }
+    /* Optional: Makes the sample page fill the window. */
+
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    </style>
+    <title>智慧節水管理平台</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
 </head>
 
-<body>
-<span style="font-size:50px;">GameSale版-Moptt標題修正教學 By MAGICXX</span><br /><br /><br />	
-<span style="font-size:40px;">1.首先進去你的文章，點文章右下角的三個點</span><br />
-<img src="圖片1.png" /><br /><br /><br />	
-<span style="font-size:40px;">2.點編輯文章</span><br />
-<img src="圖片2.png" /><br /><br /><br />
-<span style="font-size:40px;">3.把上面的屬性框框裡面的NS改成PS4，或者任何你要賣的平台，就可以啦!</span><br />
-<img src="圖片3.png" /><br /><br /><br />
+<body class="is-preload">
+    <!-- Sidebar -->
+    <section id="sidebar">
+        <div class="inner">
+            <nav style="FONT-SIZE: 1.7em;">
+                <ul>
+                    <li><a href="#intro">智慧節水管理平台</a></li>
+                    <li><a href="#one">選定目標區位</a></li>
+                    <li><a href="#two">再生水量潛能推估</a></li>
+                    <li><a href="#three">自來水量潛能推估</a></li>
+                    <li><a href="#four">屋頂貯集水量潛能推估</a></li>
+                    <li><a href="#five">推估潛能結果</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Intro -->
+        <section id="intro" class="wrapper style1 fullscreen fade-up">
+            <div class="inner">
+                <h1>智慧節水管理平台</h1>
+                <p>歡迎使用智慧節水管理平台，此平台提供節水潛能推估計算，請依照不同方式進行潛能估計。</p>
+                <ul class="actions">
+                    <li><a href="#one" class="button scrolly">進行推估</a></li>
+                </ul>
+            </div>
+        </section>
+        <!-- One -->
+        <section id="one" class="wrapper style2 spotlights">
+            <div class="inner">
+                <!--                 			<iframe					  
+								  frameborder="0" 
+								  style="border:0" 
+								  src="https://www.google.com/maps/embed/v1/view?key=AIzaSyDdoRmeuR3txApDhNc0kvD47pIFFIG8N7k&zoom=14&center=25.033952,121.564360" 
+								  allowfullscreen>
+								</iframe> -->
+            </div>
+            <div class="inner">
+                <table border="1">
+                    <tr>
+                        <td>
+                            <div style="border-width: 5px;border-style: groove;border-color: blue;padding: 5px;text-align: center;line-height: 1px;background-color: blue;max-width: 60%;">
+                                <h4>輸入研究區域</h4>
+                                <br>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <div id="twzipcode"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="border-width: 5px;border-style: groove;border-color: green;padding: 5px;max-height: 80%;text-align: center;line-height: 1px;background-color: green;max-width: 60%;">
+                                <h4>加入背景圖層</h4>
+                                <br>
+                            </div>
+                        </td>
+                        <td>
+                        	<form >
+							<input type="checkbox" value="1" name="Product_1" style="display: inline-block";> 自來水管網圖<br>
+							<input type="checkbox" value="2" name="Product_2" style="display: inline-block";> 雨量站圖 <br>
+							<input type="checkbox" value="3" name="Product_3";> 建築物位置圖<br>
+							<input type="checkbox" value="4" name="Product_4";> 水權登記位置圖<br>
+							<input type="checkbox" value="5" name="Product_5";> 污水處理廠位置圖<br>
+							<input type="checkbox" value="6" name="Product_6";> 徐昇氏多邊形圖<br>
+							<input type="checkbox" value="7" name="Product_7";> 水井位置圖<br>
+							</form>
 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="border-width: 5px;border-style: groove;border-color: darkgoldenrod;padding: 5px;max-height: 80%;text-align: center;line-height: 1px;background-color: darkgoldenrod;max-width: 60%;">
+                                <h4>輸入背景資料</h4>
+                                <br>
+                            </div>
+                        </td>
+                        <td>
+                            <div style="border-width: 5px;border-style: groove;border-color: blue;padding: 5px;max-height: 80%;text-align: center;line-height: 1px;background-color: blue;max-width: 60%;">
+                                <h3>輸入研究區域8</h3>
+                                <br>
+                            </div>
+                        </td>
+                        <td>
+                            <div style="border-width: 5px;border-style: groove;border-color: blue;padding: 5px;max-height: 80%;text-align: center;line-height: 1px;background-color: blue;max-width: 60%;">
+                                <h3>輸入研究區域</h3>
+                                <br>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <!-- Two -->
+        <section id="two" class="wrapper style3 fade-up">
+            <div class="inner">
+                <h2>What we do</h2>
+                <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+                <div class="features">
+                    <section>
+                        <span class="icon major fa-code"></span>
+                        <h3>Lorem ipsum amet</h3>
+                        <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+                    </section>
+                    <section>
+                        <span class="icon major fa-lock"></span>
+                        <h3>Aliquam sed nullam</h3>
+                        <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+                    </section>
+                    <section>
+                        <span class="icon major fa-cog"></span>
+                        <h3>Sed erat ullam corper</h3>
+                        <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+                    </section>
+                    <section>
+                        <span class="icon major fa-desktop"></span>
+                        <h3>Veroeros quis lorem</h3>
+                        <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+                    </section>
+                    <section>
+                        <span class="icon major fa-chain"></span>
+                        <h3>Urna quis bibendum</h3>
+                        <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+                    </section>
+                    <section>
+                        <span class="icon major fa-diamond"></span>
+                        <h3>Aliquam urna dapibus</h3>
+                        <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+                    </section>
+                </div>
+                <ul class="actions">
+                    <li><a href="generic.html" class="button">Learn more</a></li>
+                </ul>
+            </div>
+        </section>
+        <!-- Three -->
+        <section id="three" class="wrapper style1 fade-up">
+            <div class="inner">
+                <h2>Get in touch</h2>
+                <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+                <div class="split style1">
+                    <section>
+                        <form method="post" action="#">
+                            <div class="fields">
+                                <div class="field half">
+                                    <label for="name">Name</label>
+                                    <input type="text" name="name" id="name" />
+                                </div>
+                                <div class="field half">
+                                    <label for="email">Email</label>
+                                    <input type="text" name="email" id="email" />
+                                </div>
+                                <div class="field">
+                                    <label for="message">Message</label>
+                                    <textarea name="message" id="message" rows="5"></textarea>
+                                </div>
+                            </div>
+                            <ul class="actions">
+                                <li><a href="" class="button submit">Send Message</a></li>
+                            </ul>
+                        </form>
+                    </section>
+                    <section>
+                        <ul class="contact">
+                            <li>
+                                <h3>Address</h3>
+                                <span>12345 Somewhere Road #654<br />
+											Nashville, TN 00000-0000<br />
+											USA</span>
+                            </li>
+                            <li>
+                                <h3>Email</h3>
+                                <a href="#">user@untitled.tld</a>
+                            </li>
+                            <li>
+                                <h3>Phone</h3>
+                                <span>(000) 000-0000</span>
+                            </li>
+                            <li>
+                                <h3>Social</h3>
+                                <ul class="icons">
+                                    <li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
+                                    <li><a href="#" class="fa-facebook"><span class="label">Facebook</span></a></li>
+                                    <li><a href="#" class="fa-github"><span class="label">GitHub</span></a></li>
+                                    <li><a href="#" class="fa-instagram"><span class="label">Instagram</span></a></li>
+                                    <li><a href="#" class="fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <!-- four -->
+        <section id="four" class="wrapper style1 fullscreen fade-up">
+            <div class="inner">
+                <h1>智慧節水管理平台</h1>
+                <p>歡迎使用智慧節水管理平台，此平台提供節水潛能推估計算，請依照不同方式進行潛能估計。</p>
+                <ul class="actions">
+                    <li><a href="#one" class="button scrolly">進行推估</a></li>
+                </ul>
+            </div>
+        </section>
+        <!-- five -->
+        <section id="five" class="wrapper style1 fullscreen fade-up">
+            <div class="inner">
+                <h1>智慧節水管理平台</h1>
+                <p>歡迎使用智慧節水管理平台，此平台提供節水潛能推估計算，請依照不同方式進行潛能估計。</p>
+                <ul class="actions">
+                    <li><a href="#one" class="button scrolly">進行推估</a></li>
+                </ul>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer id="footer" class="wrapper style1-alt">
+            <div class="inner">
+                <ul class="menu">
+                    <li>&copy; Untitled. All rights reserved.</li>
+                    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery.twzipcode-1.7.14.js"></script>
 </body>
+
 </html>
