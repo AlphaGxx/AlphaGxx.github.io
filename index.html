@@ -1,15 +1,15 @@
 <!DOCTYPE HTML>
 <!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+    Hyperspace by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
 
 <head>
     <style>
     /* Always set the map height explicitly to define the size of the div
-	       * element that contains the map. */
+           * element that contains the map. */
 
     #map {
         height: 100%;
@@ -63,12 +63,8 @@
         <!-- One -->
         <section id="one" class="wrapper style2 spotlights">
             <div class="inner">
-                <!--                                 			<iframe					  
-								  frameborder="0" 
-								  style="border:0" 
-								  src="https://www.google.com/maps/embed/v1/view?key=AIzaSyDdoRmeuR3txApDhNc0kvD47pIFFIG8N7k&zoom=14&center=25.033952,121.564360" 
-								  allowfullscreen>
-								</iframe> -->
+ <!--                <iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?key=AIzaSyDdoRmeuR3txApDhNc0kvD47pIFFIG8N7k&zoom=14&center=25.033952,121.564360" allowfullscreen>
+                </iframe> -->
                 <table border="1">
                     <tr>
                         <td>
@@ -83,12 +79,13 @@
                                 <br>
                             </div>
                             <label for="addr">研究區域</label>
-                            <input type="text" name="addr" id="addr" value="123">
+                            <input type="text" name="addr" id="addr" value="">
                         </td>
                         <td>
                             <ul class="actions">
-                                <li><a href="#one" class="button scrolly">確認</a></li>
-                            </ul </td>
+                                <a href="#" class="button primary">確定選定區位</a>
+                            </ul>
+                            </td>
                     </tr>
                     <tr>
                         <td>
@@ -98,29 +95,36 @@
                             </div>
                         </td>
                         <td>
-                            
-
-											<div class="col-6 col-12-small">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="col-6 col-12-small">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-<!-- 											<div class="col-6 col-12-small">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="col-6 col-12-small">
-												<input type="checkbox" id="demo-copy1" name="demo-copy1">
-												<label for="demo-copy1">Email me a copy</label>
-											</div>
-												<div class="col-6 col-12-small">
-												<input type="checkbox" id="demo-copy2" name="demo-copy2">
-												<label for="demo-copy2">Email me a copy</label>
-											</div>-->
-                            
+                           
+                            <div class="col-6 col-12-small">
+                                <input type="checkbox" id="waterweb" name="waterweb">
+                                <label for="waterweb">自來水網管圖</label>
+                            </div>
+                            <div class="col-6 col-12-small">
+                                <input type="checkbox" id="rain" name="rain">
+                                <label for="rain">雨量站圖</label>
+                            </div>
+                            <div class="col-6 col-12-small">
+                                <input type="checkbox" id="sturc" name="sturc">
+                                <label for="sturc">建築物位置圖</label>
+                            </div>
+                             <div class="col-6 col-12-small">
+                                <input type="checkbox" id="waterr" name="waterr">
+                                <label for="waterr">水權登記位置圖</label>
+                            </div>
+                             <div class="col-6 col-12-small">
+                                <input type="checkbox" id="dwater" name="dwater">
+                                <label for="dwater">污水處理廠位置圖</label>
+                            </div>
+                            <div class="col-6 col-12-small">
+                                <input type="checkbox" id="thissen" name="thissen">
+                                <label for="thissen">徐昇式圖</label>
+                            </div>
+                            <div class="col-6 col-12-small">
+                                <input type="checkbox" id="waterwell" name="waterwell">
+                                <label for="waterwell">水井位置圖</label>
+                            </div>
+                        
                         </td>
                     </tr>
                     <tr>
@@ -135,15 +139,17 @@
                                 <label for="people">人口數</label>
                                 <input type="text" name="people" id="people" value="" placeholder="people" />
                                 <br>
-                                <label for="water">每人每月用水量</label>
-                                <input type="text" name="water " id="water" value="" placeholder="water" /><br>
+                                <label for="water">每人每月用水量(噸)</label>
+                                <input type="text" name="water " id="water" value="" placeholder="water" />
+                                <br>
                                 <label for="percent ">抄見率</label>
-                        		<input type="text" name="percent" id="percent"value="" placeholder="percent" />
+                                <input type="text" name="percent" id="percent" value="" placeholder="percent" />
                             </div>
                         </td>
                         <td>
-                            <div class="col-6 col-12-xsmall">
-                            </div>
+                                <ul class="actions">
+                                <a href="#" class="button primary">計算用水缺口</a>
+                            </ul>
                         </td>
                     </tr>
                 </table>
@@ -223,8 +229,8 @@
                             <li>
                                 <h3>Address</h3>
                                 <span>12345 Somewhere Road #654<br />
-											Nashville, TN 00000-0000<br />
-											USA</span>
+                                            Nashville, TN 00000-0000<br />
+                                            USA</span>
                             </li>
                             <li>
                                 <h3>Email</h3>
