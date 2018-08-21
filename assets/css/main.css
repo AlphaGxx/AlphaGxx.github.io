@@ -22,7 +22,8 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+	vertical-align: center;
+
 }
 iframe{
 	margin: 0;
@@ -1829,6 +1830,8 @@ input, select, textarea {
 
 /* Button */
 
+	input[type="textbox"]
+
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
@@ -3152,6 +3155,8 @@ input, select, textarea {
 			}
 
 		table td {
+			text-align: center;
+			align-content: center;
 			padding: 0.75em 0.75em;
 		}
 
@@ -3928,10 +3933,10 @@ input, select, textarea {
 			}
 
 		}
-.zipcode {
+/*.zipcode {
     background-color: #ff6473;
     color: #black;
-}
+}*/
 .county {
     background-color: #008000;
     color: #fff;

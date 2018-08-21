@@ -63,14 +63,13 @@
         <!-- One -->
         <section id="one" class="wrapper style2 spotlights">
             <div class="inner">
-                <!--                 			<iframe					  
+<!--                                 			<iframe					  
 								  frameborder="0" 
 								  style="border:0" 
 								  src="https://www.google.com/maps/embed/v1/view?key=AIzaSyDdoRmeuR3txApDhNc0kvD47pIFFIG8N7k&zoom=14&center=25.033952,121.564360" 
 								  allowfullscreen>
 								</iframe> -->
-            </div>
-            <div class="inner">
+            
                 <table border="1">
                     <tr>
                         <td>
@@ -80,12 +79,19 @@
                             </div>
                         </td>
                         <td>
-                            <div>
+                            <div>                            	                          	
                                 <div id="twzipcode"></div>
+                                <br>
+
+
                             </div>
+                            <label for="addr">研究區域</label>
+                            <input type="text" name="addr" id="addr" value="123">
                         </td>
                         <td>
-                            <br>
+                                            <ul class="actions">
+                    <li><a href="#one" class="button scrolly">確認</a></li>
+                </ul
                         </td>
                     </tr>
                     <tr>
@@ -96,16 +102,17 @@
                             </div>
                         </td>
                         <td>
+                        	<div class="inner">
                         	<form >
-							<input type="checkbox" value="1" name="Product_1" style="display: inline-block";> 自來水管網圖<br>
-							<input type="checkbox" value="2" name="Product_2" style="display: inline-block";> 雨量站圖 <br>
+							<input type="checkbox" value="1" name="Product_1" ;> 自來水管網圖<br>
+							<input type="checkbox" value="2" name="Product_2" ;> 雨量站圖 <br>
 							<input type="checkbox" value="3" name="Product_3";> 建築物位置圖<br>
 							<input type="checkbox" value="4" name="Product_4";> 水權登記位置圖<br>
 							<input type="checkbox" value="5" name="Product_5";> 污水處理廠位置圖<br>
 							<input type="checkbox" value="6" name="Product_6";> 徐昇氏多邊形圖<br>
 							<input type="checkbox" value="7" name="Product_7";> 水井位置圖<br>
 							</form>
-
+							</div>
                         </td>
                     </tr>
                     <tr>
@@ -116,16 +123,17 @@
                             </div>
                         </td>
                         <td>
-                            <div style="border-width: 5px;border-style: groove;border-color: blue;padding: 5px;max-height: 80%;text-align: center;line-height: 1px;background-color: blue;max-width: 60%;">
-                                <h3>輸入研究區域8</h3>
-                                <br>
-                            </div>
+                        	<label for="people">人口數</label>
+                        	<input type=text" name="people" id="peopl"><br>
+                        	<br>
+                        	<label for="water">每人每月用水量</label>
+                        	<input type=text" name="water" id="water"><br>
+
+                        	
                         </td>
                         <td>
-                            <div style="border-width: 5px;border-style: groove;border-color: blue;padding: 5px;max-height: 80%;text-align: center;line-height: 1px;background-color: blue;max-width: 60%;">
-                                <h3>輸入研究區域</h3>
-                                <br>
-                            </div>
+                        	<label for="percent">抄見率</label>
+                        	<input type=text" name="percent" id="percent">
                         </td>
                     </tr>
                 </table>
