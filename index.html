@@ -1,299 +1,46 @@
-<!DOCTYPE HTML>
-<!--
-    Hyperspace by HTML5 UP
-    html5up.net | @ajlkn
-    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <style>
-    /* Always set the map height explicitly to define the size of the div
-           * element that contains the map. */
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>台中油漆、台中室內油漆、台中外牆防水、台中屋頂PU防水、彰化油漆防水</title>
+<style type="text/css">
+body,td,th {
+	font-family: "微軟正黑體";
+}
 
-    #map {
-        height: 100%;
-    }
-    /* Optional: Makes the sample page fill the window. */
 
-    html,
-    body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    </style>
-    <title>智慧節水管理平台</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript>
-        <link rel="stylesheet" href="assets/css/noscript.css" />
-    </noscript>
+#header {
+	background-image: url(./img/index-top1.jpg);
+	height: 60px;
+	width: 1076px;
+}
+#content {
+	background-image: url(./img/index-middle30.jpg);
+	height: 32px;
+	width: 1076px;
+	padding-top: 10px;
+}
+#footer {
+	height: 540px;
+	width: 1076px;
+}
+</style>
 </head>
 
-<body class="is-preload">
-    <!-- Sidebar -->
-    <section id="sidebar">
-        <div class="inner">
-            <nav style="FONT-SIZE: 1.7em;">
-                <ul>
-                    <li><a href="#intro">智慧節水管理平台</a></li>
-                    <li><a href="#one">選定目標區位</a></li>
-                    <li><a href="#two">再生水量潛能推估</a></li>
-                    <li><a href="#three">自來水量潛能推估</a></li>
-                    <li><a href="#four">屋頂貯集水量潛能推估</a></li>
-                    <li><a href="#five">推估潛能結果</a></li>
-                </ul>
-            </nav>
-        </div>
-    </section>
-    <!-- Wrapper -->
-    <div id="wrapper">
-        <!-- Intro -->
-        <section id="intro" class="wrapper style1 fullscreen fade-up">
-            <div class="inner">
-                <h1>智慧節水管理平台</h1>
-                <p>歡迎使用智慧節水管理平台，此平台提供節水潛能推估計算，請依照不同方式進行潛能估計。</p>
-                <ul class="actions">
-                    <li><a href="#one" class="button scrolly">進行推估</a></li>
-                </ul>
-            </div>
-        </section>
-        <!-- One -->
-        <section id="one" class="wrapper style2 spotlights">
-            <div class="inner">
- <!--                <iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?key=AIzaSyDdoRmeuR3txApDhNc0kvD47pIFFIG8N7k&zoom=14&center=25.033952,121.564360" allowfullscreen>
-                </iframe> -->
-                <table border="1">
-                    <tr>
-                        <td>
-                            <div style="border-width: 5px;border-style: groove;border-color: blue;padding: 5px;text-align: center;line-height: 1px;background-color: blue;max-width: 60%;">
-                                <h4>輸入研究區域</h4>
-                                <br>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <div id="twzipcode"></div>
-                                <br>
-                            </div>
-                            <label for="addr">研究區域</label>
-                            <input type="text" name="addr" id="addr" value="">
-                        </td>
-                        <td>
-                            <ul class="actions">
-                                <a href="#" class="button primary">確定選定區位</a>
-                            </ul>
-                            </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div style="border-width: 5px;border-style: groove;border-color: green;padding: 5px;max-height: 80%;text-align: center;line-height: 1px;background-color: green;max-width: 60%;">
-                                <h4>加入背景圖層</h4>
-                                <br>
-                            </div>
-                        </td>
-                        <td>
-                           
-                            <div class="col-6 col-12-small">
-                                <input type="checkbox" id="waterweb" name="waterweb">
-                                <label for="waterweb">自來水網管圖</label>
-                            </div>
-                            <div class="col-6 col-12-small">
-                                <input type="checkbox" id="rain" name="rain">
-                                <label for="rain">雨量站圖</label>
-                            </div>
-                            <div class="col-6 col-12-small">
-                                <input type="checkbox" id="sturc" name="sturc">
-                                <label for="sturc">建築物位置圖</label>
-                            </div>
-                             <div class="col-6 col-12-small">
-                                <input type="checkbox" id="waterr" name="waterr">
-                                <label for="waterr">水權登記位置圖</label>
-                            </div>
-                             <div class="col-6 col-12-small">
-                                <input type="checkbox" id="dwater" name="dwater">
-                                <label for="dwater">污水處理廠位置圖</label>
-                            </div>
-                            <div class="col-6 col-12-small">
-                                <input type="checkbox" id="thissen" name="thissen">
-                                <label for="thissen">徐昇式圖</label>
-                            </div>
-                            <div class="col-6 col-12-small">
-                                <input type="checkbox" id="waterwell" name="waterwell">
-                                <label for="waterwell">水井位置圖</label>
-                            </div>
-                        
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div style="border-width: 5px;border-style: groove;border-color: darkgoldenrod;padding: 5px;max-height: 80%;text-align: center;line-height: 1px;background-color: darkgoldenrod;max-width: 60%;">
-                                <h4>輸入背景資料</h4>
-                                <br>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="col-6 col-12-xsmall">
-                                <label for="people">人口數</label>
-                                <input type="text" name="people" id="people" value="" placeholder="people" />
-                                <br>
-                                <label for="water">每人每月用水量(噸)</label>
-                                <input type="text" name="water " id="water" value="" placeholder="water" />
-                                <br>
-                                <label for="percent ">抄見率</label>
-                                <input type="text" name="percent" id="percent" value="" placeholder="percent" />
-                            </div>
-                        </td>
-                        <td>
-                                <ul class="actions">
-                                <a href="#" class="button primary">計算用水缺口</a>
-                            </ul>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </section>
-        <!-- Two -->
-        <section id="two" class="wrapper style3 fade-up">
-            <div class="inner">
-                <h2>What we do</h2>
-                <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-                <div class="features">
-                    <section>
-                        <span class="icon major fa-code"></span>
-                        <h3>Lorem ipsum amet</h3>
-                        <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-                    </section>
-                    <section>
-                        <span class="icon major fa-lock"></span>
-                        <h3>Aliquam sed nullam</h3>
-                        <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-                    </section>
-                    <section>
-                        <span class="icon major fa-cog"></span>
-                        <h3>Sed erat ullam corper</h3>
-                        <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-                    </section>
-                    <section>
-                        <span class="icon major fa-desktop"></span>
-                        <h3>Veroeros quis lorem</h3>
-                        <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-                    </section>
-                    <section>
-                        <span class="icon major fa-chain"></span>
-                        <h3>Urna quis bibendum</h3>
-                        <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-                    </section>
-                    <section>
-                        <span class="icon major fa-diamond"></span>
-                        <h3>Aliquam urna dapibus</h3>
-                        <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-                    </section>
-                </div>
-                <ul class="actions">
-                    <li><a href="generic.html" class="button">Learn more</a></li>
-                </ul>
-            </div>
-        </section>
-        <!-- Three -->
-        <section id="three" class="wrapper style1 fade-up">
-            <div class="inner">
-                <h2>Get in touch</h2>
-                <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-                <div class="split style1">
-                    <section>
-                        <form method="post" action="#">
-                            <div class="fields">
-                                <div class="field half">
-                                    <label for="name">Name</label>
-                                    <input type="text" name="name" id="name" />
-                                </div>
-                                <div class="field half">
-                                    <label for="email">Email</label>
-                                    <input type="text" name="email" id="email" />
-                                </div>
-                                <div class="field">
-                                    <label for="message">Message</label>
-                                    <textarea name="message" id="message" rows="5"></textarea>
-                                </div>
-                            </div>
-                            <ul class="actions">
-                                <li><a href="" class="button submit">Send Message</a></li>
-                            </ul>
-                        </form>
-                    </section>
-                    <section>
-                        <ul class="contact">
-                            <li>
-                                <h3>Address</h3>
-                                <span>12345 Somewhere Road #654<br />
-                                            Nashville, TN 00000-0000<br />
-                                            USA</span>
-                            </li>
-                            <li>
-                                <h3>Email</h3>
-                                <a href="#">user@untitled.tld</a>
-                            </li>
-                            <li>
-                                <h3>Phone</h3>
-                                <span>(000) 000-0000</span>
-                            </li>
-                            <li>
-                                <h3>Social</h3>
-                                <ul class="icons">
-                                    <li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
-                                    <li><a href="#" class="fa-facebook"><span class="label">Facebook</span></a></li>
-                                    <li><a href="#" class="fa-github"><span class="label">GitHub</span></a></li>
-                                    <li><a href="#" class="fa-instagram"><span class="label">Instagram</span></a></li>
-                                    <li><a href="#" class="fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </section>
-                </div>
-            </div>
-        </section>
-        <!-- four -->
-        <section id="four" class="wrapper style1 fullscreen fade-up">
-            <div class="inner">
-                <h1>智慧節水管理平台</h1>
-                <p>歡迎使用智慧節水管理平台，此平台提供節水潛能推估計算，請依照不同方式進行潛能估計。</p>
-                <ul class="actions">
-                    <li><a href="#one" class="button scrolly">進行推估</a></li>
-                </ul>
-            </div>
-        </section>
-        <!-- five -->
-        <section id="five" class="wrapper style1 fullscreen fade-up">
-            <div class="inner">
-                <h1>智慧節水管理平台</h1>
-                <p>歡迎使用智慧節水管理平台，此平台提供節水潛能推估計算，請依照不同方式進行潛能估計。</p>
-                <ul class="actions">
-                    <li><a href="#one" class="button scrolly">進行推估</a></li>
-                </ul>
-            </div>
-        </section>
-        <!-- Footer -->
-        <footer id="footer" class="wrapper style1-alt">
-            <div class="inner">
-                <ul class="menu">
-                    <li>&copy; Untitled. All rights reserved.</li>
-                    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                </ul>
-            </div>
-        </footer>
-    </div>
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/jquery.twzipcode-1.7.14.js"></script>
-</body>
+<body>
+<div id="header">  
+</div>
+<div id="content">
+  <marquee direction="right" height="30" scrollamount="5" behavior="alternate">徵才:有志青年想學一技之長，可以刻苦耐勞對油漆粉刷有興趣者，可以和我連絡。</marquee>
+</div>
+<div id="footer"><img src="./img/index-under.jpg" alt="" width="1077" height="540" usemap="#Map" border="0"/>
+   <map name="Map" id="Map">
+    <area shape="rect" coords="829,1,922,92" href="a1-introduce.html" />
+    <area shape="rect" coords="940,0,1034,93" href="a3-finish.html" />
+    <area shape="rect" coords="831,107,924,203" href="a2-item.html" />
+    <area shape="rect" coords="940,110,1031,203" href="a4-connection.html" />    
+  </map>
+</div>
 
+</body>
 </html>
